@@ -1,7 +1,7 @@
 
-GROUP - COLLEAGUE IN OUT
+<h1>GROUP - COLLEAGUE IN OUT<h1>
 
-An Application to check if your colleagues are IN OUT or BUSY. 
+<b>An Application to check if your colleagues are IN OUT or BUSY.<b> 
 
 Hardware Requirements : 
 
