@@ -1,5 +1,5 @@
 
-<h1>GROUP - COLLEAGUE IN OUT<h1>
+<h1>GROUP 2 - COLLEAGUE IN OUT<h1>
 
 <b>An Application to check if your colleagues are IN OUT or BUSY.<b> 
 
