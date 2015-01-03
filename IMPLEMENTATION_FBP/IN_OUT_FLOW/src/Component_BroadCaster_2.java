@@ -21,6 +21,8 @@ public class Component_BroadCaster_2 extends Component{
 	private InputPort inport;
 	private OutputPort[] outport;
 	
+	String keyboard,mouse;
+	
 	@Override
 	  protected void execute()
 	  {
@@ -29,8 +31,11 @@ public class Component_BroadCaster_2 extends Component{
 		{
 			String decision = (String) d.getContent();
 			
-			Packet read_keyboard = create(decision);
-			Packet read_mouse = create(decision);
+			keyboard = "BusyK";
+			mouse = "BusyMU";
+			
+			Packet read_keyboard = create(keyboard);
+			Packet read_mouse = create(mouse);
 			
 			outport[0].send(read_keyboard);
 			outport[1].send(read_mouse);

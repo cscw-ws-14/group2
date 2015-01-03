@@ -67,6 +67,14 @@ public class Component_Check_Office_Hours extends Component {
 		    	/* GMT time + one hour*/
 		    	long currentTime = (millisSinceGMTMidnight/(60*1000)) + 60;
 		    	
+		    	/* For one extra added hour , GMT + 60 mins*/
+		    	if(currentTime >= 1440)
+		    	{
+		    		currentTime = currentTime - 1440;
+		    	}
+		    	
+		    	System.out.println(currentTime);
+		    	
 		    	/* Send to Decider */
 		    	
 		    	if ((currentTime > officeStartTime) && (currentTime < officeEndTime) )
@@ -77,7 +85,7 @@ public class Component_Check_Office_Hours extends Component {
 		    	}
 		    	else
 		    	{
-		    		decision = "OutTIME";	
+		    		decision = "OutTime";	
 		    		Packet p1 = create(decision);
 		    		outport[0].send(p1);
 		    	}

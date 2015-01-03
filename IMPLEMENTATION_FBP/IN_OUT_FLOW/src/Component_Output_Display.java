@@ -14,11 +14,15 @@ import com.jpmorrsn.fbp.engine.Packet;
 
 @ComponentDescription("Print Values from Inport")
 @InPort(value = "IN", description = "Values to print in UI", type = String.class)
+@OutPort(value = "OUT", description = "Values to send", type = String.class)
 
 
 public class Component_Output_Display extends Component {
 
 	private InputPort inport;
+	private OutputPort outport;
+	
+	
 	@Override
 	  protected void execute()
 	  {
@@ -28,6 +32,11 @@ public class Component_Output_Display extends Component {
 			String Result = (String) p.getContent();
 			
 			System.out.println(Result);
+			
+			Packet p1 =  create(Result);
+			
+			outport.send(p1);
+			
 			drop(p);
 		}
 	  }
@@ -37,6 +46,7 @@ public class Component_Output_Display extends Component {
 	 {
 		
 		 inport = openInput("IN");
+		 outport = openOutput("OUT");
 
 	  }
 	

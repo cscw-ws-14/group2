@@ -1,0 +1,40 @@
+{
+  "name": "KM_Sensor",
+  "description": "Sensor to predict user status based on the key and mouse clicks",
+  "meta": {"any":"key", "kind":"dummy"},
+  "ttl": 30,
+  "resources": [
+    {
+      "type": "Resource",
+      "name": "KMP", 
+      "agent": {
+        "type": "service",
+        "dir": null,
+        "exec": "java -jar /home/sridev/Desktop/Prediction.jar"
+      },
+      "representation": {
+        "application/json": {
+          "type": "object"
+        }
+      },
+      "protocols": [
+        {
+          "type": "REST",
+          "methods": [
+            "GET"
+          ],
+          "content-types": [
+            "application/json"
+          ]
+        },
+		{
+            "type": "MQTT", 
+            "methods": [ 
+                "SUB"
+            ],
+            "content-types": ["application/json"]
+        }
+      ]
+    }
+  ]
+}

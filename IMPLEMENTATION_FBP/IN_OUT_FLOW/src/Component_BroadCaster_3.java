@@ -20,6 +20,8 @@ public class Component_BroadCaster_3 extends Component {
 	private InputPort inport;
 	private OutputPort[] outport;
 	
+	String motion,keyboard,mouse;
+	
 	@Override
 	  protected void execute()
 	  {
@@ -27,9 +29,12 @@ public class Component_BroadCaster_3 extends Component {
 		while ((d = inport.receive()) != null) 
 		{
 			String decision = (String) d.getContent();
-			Packet read_motion = create(decision);
-			Packet read_keyboard = create(decision);
-			Packet read_mouse = create(decision);
+			motion = "FindM";
+			keyboard = "FindK";
+			mouse = "FindMU";
+			Packet read_motion = create(motion);
+			Packet read_keyboard = create(keyboard);
+			Packet read_mouse = create(mouse);
 			
 			outport[0].send(read_motion);
 			outport[1].send(read_keyboard);

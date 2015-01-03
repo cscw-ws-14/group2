@@ -49,7 +49,7 @@ public class Component_Check_IN_BUSY extends Component {
 			}
 			else
 			{
-				Packet decision = create("UserIN Not BUSY");
+				Packet decision = create("UserIN not BUSY");
 				outport.send(decision);
 				
 			}

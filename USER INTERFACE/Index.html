@@ -1,0 +1,1537 @@
+<!doctype html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery.1.7.2.min.js"></script>
+	<script type="text/javascript" src="jquery.imagemapster.js"></script>
+	<script type="text/javascript" src="jquery.textillate.js"></script> 
+	<script type="text/javascript" src="jquery.cycle.all.js"></script> 
+
+	<script type="text/javascript" src="jquery.lettering.js"></script> 
+
+	<link href="animate.css" rel="stylesheet">
+
+	<link href="style.css" rel="stylesheet">
+	
+	<style>
+
+		body {
+			  width:2000px;
+			  height:1000px;
+			}	
+
+
+		#header {
+			background-color:black;
+			color:white;
+			text-align:left;
+			padding:50px;
+			}
+
+		h1.tlt {
+    			color: #FFA500;
+			font-size: 60px;
+			font-weight: bold;
+			font-family: courier;
+			 			
+			
+			}
+
+		h2.tlt1 {
+    			color: rgb(180, 180, 180);
+			font-size: 30px;
+			font-weight: bold;
+			font-family: courier; 			
+			
+			}
+
+		h2.tlt2 {
+    			color: rgb(180, 180, 180);
+			font-size: 25px;
+			/*font-weight: bold;*/
+			font-family: courier; 			
+			
+			}
+
+		#selections{
+    			color: #000000;
+			font-size: 20px;
+			font-family: verdana; 			
+			
+			}
+
+
+		.black-bar {
+		    color: rgb(255, 255, 255);
+		    background-color: rgb(68, 68, 68);
+		    border: .133em solid rgb(68, 68, 68);
+		    border-radius: .333em;
+		    max-width: 100%;
+		    padding: .3em .5em;
+		    margin-top: .5em;
+		    margin-bottom: .5em;
+	            
+		    /*text-align: center;*/
+		    
+		}
+
+		ul {
+		    list-style: none;   
+		}
+
+		/*.slideshow { height: 232px; width: 232px; margin: auto }
+		.slideshow img { padding: 15px; border: 1px solid #ccc; background-color: #eee; }*/
+	</style>
+
+</head>
+	<body>
+
+		
+
+		<div class="black-bar" style="position: relative; left: 0px; top: 0px;">
+    
+		<h1 class="tlt" style="position: relative; left: 160px; top: 0px;">
+    		<ul class="texts">
+
+		
+
+        		<li>COLLEAGUE IN OUT</li>   
+        		
+    		</ul>
+		</h1>
+		</div>
+
+		<div id ="ups"></div>
+		
+		<div style="position: relative; left: 100px; top: 30px;">
+			<img id="main" src="Main1.png" style="position: relative; top: 0px; left: 0;" usemap="#floor"/>
+			<img id="user1" src="green.jpg" style="position: absolute; top: 160px; left: 240px;"/>
+			<img id="user2" src="green.jpg" style="position: absolute; top: 160px; left: 345px;"/>
+			<img id="user3" src="green.jpg" style="position: absolute; top: 160px; left: 460px;"/>
+			<img id="user4" src="green.jpg" style="position: absolute; top: 160px; left: 560px;"/>
+			<img id="user5" src="green.jpg" style="position: absolute; top: 160px; left: 665px;"/>
+			<img id="user6" src="green.jpg" style="position: absolute; top: 160px; left: 790px;"/>
+			<img id="user7" src="green.jpg" style="position: absolute; top: 160px; left: 895px;"/>
+		
+			<img id="user8" src="green.jpg" style="position: absolute; top: 115px; left: 1045px;"/>
+
+			<img id="user9" src="green.jpg" style="position: absolute; top: 418px; left: 1045px;"/>
+			<img id="user10" src="green.jpg" style="position: absolute; top: 518px; left: 1045px;"/>
+			<img id="user11" src="green.jpg" style="position: absolute; top: 618px; left: 1045px;"/>
+
+			<img id="user12" src="green.jpg" style="position: absolute; top: 660px; left: 895px;"/>
+			<img id="user13" src="green.jpg" style="position: absolute; top: 660px; left: 785px;"/>
+			<img id="user14" src="green.jpg" style="position: absolute; top: 660px; left: 670px;"/>
+			<img id="user15" src="green.jpg" style="position: absolute; top: 660px; left: 567px;"/>
+			<img id="user16" src="green.jpg" style="position: absolute; top: 660px; left: 467px;"/>
+
+			<img id="user17" src="green.jpg" style="position: absolute; top: 710px; left: 93px;"/>
+			<img id="user18" src="green.jpg" style="position: absolute; top: 610px; left: 93px;"/>
+			<img id="user19" src="green.jpg" style="position: absolute; top: 510px; left: 93px;"/>
+			<img id="user20" src="green.jpg" style="position: absolute; top: 410px; left: 93px;"/>
+			<img id="user21" src="green.jpg" style="position: absolute; top: 305px; left: 93px;"/>
+			
+			
+		
+
+		<form action="#" style="position : absolute; top: 50px; left: 1300px;">
+		<div id="select" style="position : absolute; top: 0px; left: 0px; width : 250px ; height : 250px ; color: rgb(180, 180, 180); background-color: rgb(68, 68, 68); border: .133em solid rgb(68, 68, 68);border-radius: 15px; padding: .3em .5em; margin-top: .5em; margin-bottom: .5em; text-align: center;">
+
+			<div id = "selections" style = "color: rgb(180, 180, 180);" class = "tlt1">WELCOME <br> Please, Click on the room <br> To get Full Details.</div>
+		</div>
+
+		<div id = "img_slide" class="slideshow" style="position: absolute; top: 130px; left: 50px;">
+		<img id = "img_1" src="user1.jpg" />
+		<img id = "img_2" src="user2.jpg" />
+		<img id = "img_3" src="user3.png" />
+		<img id = "img_4" src="user4.jpg" />
+		<img id = "img_5" src="user5.jpg" />
+		<img id = "img_6" src="user6.jpg" />
+		<img id = "img_7" src="user7.jpg" />
+		<img id = "img_8" src="user8.jpg" />
+		<img id = "img_9" src="user9.jpg" />
+		<img id = "img_10" src="user10.jpg" />
+		<img id = "img_11" src="user11.jpg" />
+		<img id = "img_12" src="user12.jpg" />
+		<img id = "img_13" src="user13.jpg" />
+		<img id = "img_14" src="user14.jpg" />
+		<img id = "img_15" src="user15.jpg" />
+		<img id = "img_16" src="user16.jpg" />
+		<img id = "img_17" src="user17.jpg" />
+		<img id = "img_18" src="user18.jpg" />
+		<img id = "img_19" src="user19.jpg" />
+		<img id = "img_20" src="user20.jpg" />
+		<img id = "img_21" src="user21.jpg" />
+		</div>
+
+		<div id = "img_slide_color" class="slideshow1" style="position: absolute; top: 150px; left: 190px;">
+		<img id = "color_img_green" src="rsz_green_black.png" />
+		<img id = "color_img_orange" src="rsz_orange_black.png" />
+		<img id = "color_img_red" src="rsz_red_black.png" />
+		</div>
+
+		<div id="profile_picture" style="position: absolute; top: 40px; left: 35px;"></div>
+		<div id="status_picture" style="position: absolute; top: 80px; left: 180px;"></div>
+		</form>
+
+		
+
+		<form action="#" style="position : absolute; top: 500px; left: 1300px;; width : 250px ; height : 250px ; color: rgb(180, 180, 180); background-color: rgb(68, 68, 68); border: .133em solid rgb(68, 68, 68);border-radius: 15px; padding: .3em .5em; margin-top: .5em; margin-bottom: .5em;">
+
+			<div id = "states" style = "color: rgb(180, 180, 180); position: absolute; top: 10px; left: 20px;"><h2 class="tlt1">STATES</h2></div>
+
+			<div id = "state_In" style = "color: rgb(180, 180, 180); position: absolute; top: 70px; left: 55px;"><h2 class="tlt2">IN</h2></div>
+
+			<img src = "rsz_green_black.png" style="position: absolute; top: 80px; left: 170px;"/>
+
+			<div id = "state_Out" style = "color: rgb(180, 180, 180); position: absolute; top: 120px; left: 45px;"><h2 class="tlt2">OUT</h2></div>
+
+			<img src = "rsz_red_black.png" style="position: absolute; top: 130px; left: 170px;"/>
+
+			<div id = "state_Busy" style = "color: rgb(180, 180, 180); position: absolute; top: 170px; left: 40px;"><h2 class="tlt2">BUSY</h2></div>
+
+			<img src = "rsz_orange_black.png" style="position: absolute;top: 180px; left: 170px;"/>
+		
+		</form>
+
+		</div>
+
+		<div id = "u1" style="display : none; bottom : 5px; right: 320px;"></div>
+		<div id = "u2" style="display : none; bottom : 5px; right: 320px;"></div>
+		<div id = "u3" style="display : none; bottom : 5px; right: 320px;"></div>
+		<div id = "u4" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u5" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u6" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u7" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u8" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u9" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u10" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u11" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u12" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u13" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u14" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u15" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u16" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u17" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u18" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u19" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u20" style="display : none; right: 320px; bottom : 605px;"></div>
+		<div id = "u21" style="display : none; right: 320px; bottom : 605px;"></div>
+
+
+		<script type="text/javascript">
+
+			/* Image Slide */
+
+			
+    				$('.slideshow').cycle({
+				fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+				timeout:5000
+				
+				});
+
+				$('.slideshow1').cycle({
+				fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+				timeout:1000
+				
+				});
+			
+
+			
+		
+			var ws = new WebSocket("ws://localhost:1880/ws/example");
+			var img1 = document.getElementById("user1");
+			var img2 = document.getElementById("user2");
+			var img3 = document.getElementById("user3");
+			var img4 = document.getElementById("user4");
+			var img5 = document.getElementById("user5");
+			var img6 = document.getElementById("user6");
+			var img7 = document.getElementById("user7");
+			var img8 = document.getElementById("user8");
+			var img9 = document.getElementById("user9");
+			var img10 = document.getElementById("user10");
+			var img11 = document.getElementById("user11");
+			var img12 = document.getElementById("user12");
+			var img13 = document.getElementById("user13");
+			var img14 = document.getElementById("user14");
+			var img15 = document.getElementById("user15");
+			var img16 = document.getElementById("user16");
+			var img17 = document.getElementById("user17");
+			var img18 = document.getElementById("user18");
+			var img19 = document.getElementById("user19");
+			var img20 = document.getElementById("user20");
+			var img21 = document.getElementById("user21");
+
+			var slide_img_1 = document.getElementById("img_1");
+			var slide_img_2 = document.getElementById("img_2");
+			var slide_img_3 = document.getElementById("img_3");
+			var slide_img_4 = document.getElementById("img_4");
+			var slide_img_5 = document.getElementById("img_5");
+			var slide_img_6 = document.getElementById("img_6");
+			var slide_img_7 = document.getElementById("img_7");
+			var slide_img_8 = document.getElementById("img_8");
+			var slide_img_9 = document.getElementById("img_9");
+			var slide_img_10 = document.getElementById("img_10");
+			var slide_img_11 = document.getElementById("img_11");
+			var slide_img_12 = document.getElementById("img_12");
+			var slide_img_13 = document.getElementById("img_13");
+			var slide_img_14 = document.getElementById("img_14");
+			var slide_img_15 = document.getElementById("img_15");
+			var slide_img_16 = document.getElementById("img_16");
+			var slide_img_17 = document.getElementById("img_17");
+			var slide_img_18 = document.getElementById("img_18");
+			var slide_img_19 = document.getElementById("img_19");
+			var slide_img_20 = document.getElementById("img_20");
+			var slide_img_21 = document.getElementById("img_21");
+
+			
+			var slide_img_green = document.getElementById("color_img_green");
+			var slide_img_orange = document.getElementById("color_img_orange");
+			var slide_img_red = document.getElementById("color_img_red");
+			
+
+			var box = document.getElementById("selections");
+
+			var d;
+
+			var arr = [];
+
+			$('.tlt').textillate(
+			{ in : {
+        		    effect: 'tada',
+			    delayScale: 0,
+			    delay: 1.5,
+			    sync: false,
+			    shuffle: true
+    			},
+    				out: {
+       			    effect: 'wobble',
+			    delayScale: 0,
+			    delay: 1.5,
+			    sync: false,
+			    shuffle: true
+   			 },
+    			loop: true
+			});
+
+			$('.tlt1').textillate(
+			{ in : {
+        		    effect: 'flip',
+			    delayScale: 1.5,
+			    delay: 50,
+			    sync: false,
+			    shuffle: true
+    			},
+    				out: {
+       			    effect: 'tada',
+			    delayScale: 1.5,
+			    delay: 50,
+			    sync: false,
+			    shuffle: true
+   			 },
+    			loop: true
+			});
+
+			$('.tlt2').textillate(
+			{ in : {
+        		    effect: 'tada',
+			    delayScale: 1.5,
+			    delay: 50,
+			    sync: false,
+			    shuffle: true
+    			},
+    				out: {
+       			    effect: 'pulse',
+			    delayScale: 1.5,
+			    delay: 50,
+			    sync: false,
+			    shuffle: true
+   			 },
+    			loop: true
+			});
+
+			setInterval(function(){ 
+
+				document.getElementById("profile_picture").style.display='none';
+				document.getElementById("status_picture").style.display='none';
+
+				
+
+
+				
+				
+
+				/*box.style.padding = ".3em .5em";
+				box.style.marginTop = ".5em";
+				box.style.marginBottom = ".5em";
+				box.style.color = "rgb(180, 180, 180)";
+				box.style.border = ".133em solid rgb(68, 68, 68)";
+				box.style.textAlign = "center";	*/
+
+				document.getElementById("selections").innerHTML="WELCOME <br><br> Please, Click on the room <br> To get Full Details.";
+
+				/*$('.tlt1').textillate(
+					{ in : {
+					    effect: 'bounce',
+					    delayScale: 1.5,
+					    delay: 50,
+					    sync: false,
+					    shuffle: true
+		    			},
+		    				out: {
+		       			    effect: 'tada',
+					    delayScale: 1.5,
+					    delay: 50,
+					    sync: false,
+					    shuffle: true
+		   			 },
+		    			loop: true
+					});*/
+	
+				
+				$('.slideshow').cycle('resume');
+
+				$('.slideshow1').cycle('resume');
+
+				
+				
+				
+
+				/*$('.tlt1').textillate(
+					{ in : {
+					    effect: 'bounce',
+					    delayScale: 1.5,
+					    delay: 50,
+					    sync: false,
+					    shuffle: true
+		    			},
+		    				out: {
+		       			    effect: 'tada',
+					    delayScale: 1.5,
+					    delay: 50,
+					    sync: false,
+					    shuffle: true
+		   			 },
+		    			loop: true
+					});*/
+
+
+
+								
+				 }, 30000);
+
+
+			ws.onopen = function()
+		 	{
+		  		alert("Success");
+		  
+		 	};
+
+			ws.onmessage = function (evt) 
+		 	{
+				
+		 		var data = JSON.parse(evt.data);
+				
+			
+				if(data.topic == "u1/decision")
+				{
+					var d1 = data.payload;
+					arr[0] = d1; 
+					console.log(data);
+					switch(d1) 
+					{
+					case ("BUSY"):
+						img1.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img1.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img1.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u2/decision")
+				{
+					var d2 = data.payload;
+					arr[1] = d2;  
+					console.log(data);
+					switch(d2) 
+					{
+					case ("BUSY"):
+						img2.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img2.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img2.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u3/decision")
+				{
+					var d3 = data.payload; 
+					arr[2] = d3; 
+					console.log(data);
+					switch(d3) 
+					{
+					case ("BUSY"):
+						img3.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img3.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img3.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u4/decision")
+				{
+					var d4 = data.payload; 
+					arr[3] = d4; 
+					console.log(data);
+					switch(d4) 
+					{
+					case ("BUSY"):
+						img4.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img4.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img4.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u5/decision")
+				{
+					var d5 = data.payload;
+					arr[4] = d5;  
+					console.log(data);
+					switch(d5) 
+					{
+					case ("BUSY"):
+						img5.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img5.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img5.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u6/decision")
+				{
+					var d6 = data.payload;
+					arr[5] = d6;  
+					console.log(data);
+					switch(d6) 
+					{
+					case ("BUSY"):
+						img6.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img6.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img6.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u7/decision")
+				{
+					var d7 = data.payload; 
+					arr[6] = d7; 
+					console.log(data);
+					switch(d7) 
+					{
+					case ("BUSY"):
+						img7.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img7.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img7.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u8/decision")
+				{
+					var d8 = data.payload; 
+					arr[7] = d8; 
+					console.log(data);
+					switch(d8) 
+					{
+					case ("BUSY"):
+						img8.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img8.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img8.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u9/decision")
+				{
+					var d9 = data.payload; 
+					arr[8] = d9; 
+					console.log(data);
+					switch(d9) 
+					{
+					case ("BUSY"):
+						img9.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img9.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img9.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u10/decision")
+				{
+					var d10 = data.payload; 
+					arr[9] = d10; 
+					console.log(data);
+					switch(d10) 
+					{
+					case ("BUSY"):
+						img10.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img10.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img10.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u11/decision")
+				{
+					var d11 = data.payload; 
+					arr[10] = d11; 
+					console.log(data);
+					switch(d11) 
+					{
+					case ("BUSY"):
+						img11.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img11.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img11.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u12/decision")
+				{
+					var d12 = data.payload; 
+					arr[11] = d12; 
+					console.log(data);
+					switch(d12) 
+					{
+					case ("BUSY"):
+						img12.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img12.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img12.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u13/decision")
+				{
+					var d13 = data.payload; 
+					arr[12] = d13; 
+					console.log(data);
+					switch(d13) 
+					{
+					case ("BUSY"):
+						img13.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img13.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img13.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u14/decision")
+				{
+					var d14 = data.payload; 
+					arr[13] = d14; 
+					console.log(data);
+					switch(d14) 
+					{
+					case ("BUSY"):
+						img14.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img14.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img14.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u15/decision")
+				{
+					var d15 = data.payload; 
+					arr[14] = d15; 
+					console.log(data);
+					switch(d15) 
+					{
+					case ("BUSY"):
+						img15.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img15.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img15.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u16/decision")
+				{
+					var d16 = data.payload; 
+					arr[15] = d16; 
+					console.log(data);
+					switch(d16) 
+					{
+					case ("BUSY"):
+						img16.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img16.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img16.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u17/decision")
+				{
+					var d17 = data.payload; 
+					arr[16] = d17; 
+					console.log(data);
+					switch(d17) 
+					{
+					case ("BUSY"):
+						img17.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img17.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img17.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u18/decision")
+				{
+					var d18 = data.payload; 
+					arr[17] = d18; 
+					console.log(data);
+					switch(d18) 
+					{
+					case ("BUSY"):
+						img18.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img18.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img18.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u19/decision")
+				{
+					var d19 = data.payload; 
+					arr[18] = d19; 
+					console.log(data);
+					switch(d19) 
+					{
+					case ("BUSY"):
+						img19.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img19.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img19.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u20/decision")
+				{
+					var d20 = data.payload; 
+					arr[19] = d20; 
+					console.log(data);
+					switch(d20) 
+					{
+					case ("BUSY"):
+						img20.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img20.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img20.src = "red.jpg";
+						break;
+					}
+				}
+				if(data.topic == "u21/decision")
+				{
+					var d21 = data.payload; 
+					arr[20] = d21; 
+					console.log(data);
+					switch(d21) 
+					{
+					case ("BUSY"):
+						img21.src = "orange.jpg";
+						break;
+					case ("IN"):
+						img21.src = "green.jpg";
+						break;
+					case ("OUT"):
+						img21.src = "red.jpg";
+						break;
+					}
+				}
+				
+				document.getElementById("u1").innerHTML=arr[0];
+				document.getElementById("u2").innerHTML=arr[1];
+				document.getElementById("u3").innerHTML=arr[2];
+				document.getElementById("u4").innerHTML=arr[3];
+				document.getElementById("u5").innerHTML=arr[4];
+				document.getElementById("u6").innerHTML=arr[5];
+				document.getElementById("u7").innerHTML=arr[6];
+				document.getElementById("u8").innerHTML=arr[7];
+				document.getElementById("u9").innerHTML=arr[8];
+				document.getElementById("u10").innerHTML=arr[9];
+				document.getElementById("u11").innerHTML=arr[10];
+				document.getElementById("u12").innerHTML=arr[11];
+				document.getElementById("u13").innerHTML=arr[12];
+				document.getElementById("u14").innerHTML=arr[13];
+				document.getElementById("u15").innerHTML=arr[14];
+				document.getElementById("u16").innerHTML=arr[15];
+				document.getElementById("u17").innerHTML=arr[16];
+				document.getElementById("u18").innerHTML=arr[17];
+				document.getElementById("u19").innerHTML=arr[18];
+				document.getElementById("u20").innerHTML=arr[19];
+				document.getElementById("u21").innerHTML=arr[20];
+				
+
+			/*$(document).ready(function () {*/
+	   			var image = $('img');
+	   			var xref = {
+
+					Room1: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Alex<br><br> &nbsp; <b>STATUS</b>  : "+arr[0],
+					Room2: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Kris<br><br> &nbsp; <b>STATUS</b>  : "+arr[1],
+					Room3: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Charlie K<br><br> &nbsp; <b>STATUS</b>  : "+arr[2],
+					Room4: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Dale M<br><br> &nbsp; <b>STATUS</b>  : "+arr[3],
+					Room5: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Mattie R<br><br> &nbsp; <b>STATUS</b>  : "+arr[4],
+					Room6: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Berni L<br><br> &nbsp; <b>STATUS</b>  : "+arr[5],
+					Room7: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Cassi N<br><br> &nbsp; <b>STATUS</b>  : "+arr[6],
+					Room8: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Liv F<br><br> &nbsp; <b>STATUS</b>  : "+arr[7],
+					Room9: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Joey T<br><br> &nbsp; <b>STATUS</b>  : "+arr[8],
+					Room10: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Max G<br><br> &nbsp; <b>STATUS</b>  : "+arr[9],
+					Room11: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : George P<br><br> &nbsp; <b>STATUS</b>  : "+arr[10],
+					Room12: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Kate R<br><br> &nbsp; <b>STATUS</b>  : "+arr[11],
+					Room13: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Izzi W<br><br> &nbsp; <b>STATUS</b>  : "+arr[12],
+					Room14: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Fran V<br><br> &nbsp; <b>STATUS</b>  : "+arr[13],
+					Room15: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Leslie J<br><br> &nbsp; <b>STATUS</b>  : "+arr[14],
+					Room16: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Kel U<br><br> &nbsp; <b>STATUS</b>  : "+arr[15],
+					Room17: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Ed Y<br><br> &nbsp; <b>STATUS</b>  : "+arr[16],
+					Room18: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Sacha K<br><br> &nbsp; <b>STATUS</b>  : "+arr[17],
+					Room19: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Vic A<br><br> &nbsp; <b>STATUS</b>  : "+arr[18],
+					Room20: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Theeo I<br><br> &nbsp; <b>STATUS</b>  : "+arr[19],
+					Room21: "<br><br><br><br><br><br> &nbsp; <b>NAME</b>   : Toni K<br><br> &nbsp; <b>STATUS</b>  : "+arr[20],
+					
+				};
+
+			 
+
+	   		image.mapster(
+       			{
+       				fillOpacity: 0.4,
+       				fillColor: "ffffff",
+       				strokeColor: "3320FF",
+       				strokeOpacity: 0.8,
+       				strokeWidth: 4,
+       				stroke: true,
+            			isSelectable: true,
+				singleSelect: true,
+            				mapKey: 'name',
+            				listKey: 'name',
+            		onClick: function (e) {
+				
+				
+				/*box.style.removeProperty("padding");
+				box.style.removeProperty("margin-top");
+				box.style.removeProperty("margin-bottom");
+				box.style.removeProperty("color");
+				box.style.removeProperty("border");
+				box.style.removeProperty("text-align");*/
+
+				document.getElementById("img_1").style.display='none';
+				document.getElementById("img_2").style.display='none';
+				document.getElementById("img_3").style.display='none';
+				document.getElementById("img_4").style.display='none';
+				document.getElementById("img_5").style.display='none';
+				document.getElementById("img_6").style.display='none';
+				document.getElementById("img_7").style.display='none';
+				document.getElementById("img_8").style.display='none';
+				document.getElementById("img_9").style.display='none';
+				document.getElementById("img_10").style.display='none';
+				document.getElementById("img_11").style.display='none';
+				document.getElementById("img_12").style.display='none';
+				document.getElementById("img_13").style.display='none';
+				document.getElementById("img_14").style.display='none';
+				document.getElementById("img_15").style.display='none';
+				document.getElementById("img_16").style.display='none';
+				document.getElementById("img_17").style.display='none';
+				document.getElementById("img_18").style.display='none';
+				document.getElementById("img_19").style.display='none';
+				document.getElementById("img_20").style.display='none';
+				document.getElementById("img_21").style.display='none';
+
+				$('.slideshow').cycle('pause');
+
+				document.getElementById("color_img_green").style.display='none';
+				document.getElementById("color_img_orange").style.display='none';
+				document.getElementById("color_img_red").style.display='none';
+
+				$('.slideshow1').cycle('pause');
+
+
+
+				
+                		/*box.style.width = "250px";
+				box.style.height = "250px";
+				box.style.backgroundColor = "white";
+				box.style.boxShadow = "10px 10px 5px #888888";
+				box.style.borderRadius = "15px";*/
+				
+
+				
+
+				if(e.key == "Room1")
+				{
+				
+				
+				document.getElementById("selections").innerHTML=xref[e.key];
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user1.jpg'/>"; 
+
+				var u1 = $("#u1").html();
+				
+				switch(u1)
+				{
+					case ("IN"):
+						
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+			
+				if(e.key == "Room2")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user2.jpg'/>"; 
+
+				var u2 = $("#u2").html();
+				
+				switch(u2)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room3")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user3.png'/>"; 
+
+				var u3 = $("#u3").html();
+				
+				switch(u3)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room4")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user4.jpg'/>"; 
+
+				var u4 = $("#u4").html();
+				
+				switch(u4)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room5")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user5.jpg'/>"; 
+
+				var u5 = $("#u5").html();
+				
+				switch(u5)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room6")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user6.jpg'/>"; 
+
+				var u6 = $("#u6").html();
+				
+				switch(u6)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room7")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user7.jpg'/>"; 
+
+				var u7 = $("#u7").html();
+				
+				switch(u7)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room8")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user8.jpg'/>"; 
+
+				var u8 = $("#u8").html();
+				
+				switch(u8)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room9")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user9.jpg'/>"; 
+
+				var u9 = $("#u9").html();
+				
+				switch(u9)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room10")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user10.jpg'/>"; 
+
+				var u10 = $("#u10").html();
+				
+				switch(u10)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room11")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user11.jpg'/>"; 
+
+				var u11 = $("#u11").html();
+				
+				switch(u11)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room12")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user12.jpg'/>"; 
+
+				var u12 = $("#u12").html();
+				
+				switch(u12)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room13")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user13.jpg'/>"; 
+
+				var u13 = $("#u13").html();
+				
+				switch(u13)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+				if(e.key == "Room14")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user14.jpg'/>"; 
+
+				var u14 = $("#u14").html();
+				
+				switch(u14)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room15")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user15.jpg'/>"; 
+
+				var u15 = $("#u15").html();
+				
+				switch(u15)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room16")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user16.jpg'/>"; 
+
+				var u16 = $("#u16").html();
+				
+				switch(u16)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room17")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user17.jpg'/>"; 
+
+				var u17 = $("#u17").html();
+				
+				switch(u17)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room18")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user18.jpg'/>"; 
+
+				var u18 = $("#u18").html();
+				
+				switch(u18)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room19")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user19.jpg'/>"; 
+
+				var u19 = $("#u19").html();
+				
+				switch(u19)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room20")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user20.jpg'/>"; 
+
+				var u20 = $("#u20").html();
+				
+				switch(u20)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				if(e.key == "Room21")
+				{
+				$('#selections').html(xref[e.key]);
+				document.getElementById("profile_picture").style.display='initial';
+				document.getElementById("status_picture").style.display='initial';
+				document.getElementById("profile_picture").innerHTML="<img src='user21.jpg'/>"; 
+
+				var u21 = $("#u21").html();
+				
+				switch(u21)
+				{
+					case ("IN"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_green_black.png'/>"; 
+						break;
+		
+					case ("OUT"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_red_black.png'/>"; 
+						break;
+
+					case ("BUSY"):
+						document.getElementById("status_picture").innerHTML="<img src='rsz_orange_black.png'/>"; 
+						break;
+				}
+
+				}
+
+				
+
+			},
+
+			/*showToolTip: true,
+            		toolTipClose: ["tooltip-click", "area-click"],
+            		areas: [
+				{
+                			key: "Room1",
+                			fillColor: "ffffff"
+                		},
+
+				{
+                			key: "Room2",
+                			fillColor: "ffffff"
+                		},
+				
+				{
+                			key: "Room3",
+                			fillColor: "ffffff"
+                		}
+				
+			]*/
+        		});
+      		};
+
+		</script>
+
+		<map id="floor_map" name="floor">
+		<area shape="poly" name="Room1" coords="204,209, 204,69, 215,69, 215,46, 250,46, 250,28, 299,28, 299,209" href="#">
+		<area shape="poly" name="Room2" coords="299,209, 299,28, 421,28, 421,209" href="#">
+		<area shape="poly" name="Room3" coords="421,209, 421,28, 521,28, 521,209" href="#">
+		<area shape="poly" name="Room4" coords="521,209, 521,28, 617,28, 617,209" href="#">
+		<area shape="poly" name="Room5" coords="617,209, 617,28, 736,28, 736,209" href="#">
+		<area shape="poly" name="Room6" coords="736,209, 736,28, 819,28, 819,46, 861,46, 861,209" href="#">
+		<area shape="poly" name="Room7" coords="861,209, 861,46, 952,46, 952,209" href="#">
+
+		<area shape="poly" name="Room8" coords="952,152, 952,46, 1159,46, 1159,152" href="#">
+
+		<area shape="poly" name="Room9" coords="950,457, 950,353, 1159,353, 1159,457" href="#">
+		<area shape="poly" name="Room10" coords="950,560, 950,457, 1159,457, 1159,560 " href="#">
+
+		<area shape="poly" name="Room11" coords="950,660, 950,560, 1136,560, 1136,660 " href="#">
+
+		<area shape="poly" name="Room12" coords="950,660, 1136,660, 1136,770, 861,770, 861,610, 950,610" href="#">
+		<area shape="poly" name="Room13" coords="861,770, 861,610, 731,610, 731,797, 818,797, 818,770" href="#">
+		<area shape="poly" name="Room14" coords="733,797, 733,610, 629,610, 629,797" href="#">
+		<area shape="poly" name="Room15" coords="629,797, 629,610, 527,610, 527,797" href="#">
+		<area shape="poly" name="Room16" coords="527,610, 527,797, 424,797, 424,610" href="#">
+
+		<area shape="poly" name="Room17" coords="252,768, 252,616, 206,616, 206,665, 18,665, 18,768" href="#">
+		<area shape="poly" name="Room18" coords="18,665, 205,665, 205,563, 18,563" href="#">
+		<area shape="poly" name="Room19" coords="18,563, 205,563, 205,457, 18,457" href="#">
+		<area shape="poly" name="Room20" coords="18,457, 205,457, 205,355, 18,355" href="#">
+		<area shape="poly" name="Room21" coords="18,355, 205,355, 205,253, 18,253" href="#">
+		</map>
+	</body>
+</html>

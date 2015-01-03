@@ -73,7 +73,7 @@ public class Component_Decider extends Component {
 				if(Result.equals("UserBUSY"))
 				{
 					String status = "User Status : BUSY";
-					String decision = "Final Decision :"+Result;
+					String decision = "BUSY";
 					System.out.println(status);
 					Packet output = create(decision);
 					outport[0].send(output);
@@ -83,10 +83,41 @@ public class Component_Decider extends Component {
 			else
 			{
 				
-				
-				String decision = "Final Decision :"+Result;
+				if(Result.equals("MEETING"))
+				{
+				String decision = "OUT";
 				Packet output = create(decision);
 				outport[1].send(output);
+				}
+				
+				if(Result.equals("HOLIDAY"))
+				{
+				String decision = "OUT";
+				Packet output = create(decision);
+				outport[1].send(output);
+				}
+				
+				if(Result.equals("OutTime"))
+				{
+				String decision = "OUT";
+				Packet output = create(decision);
+				outport[1].send(output);
+				}
+				
+
+				if(Result.equals("UserOUT"))
+				{
+				String decision = "OUT";
+				Packet output = create(decision);
+				outport[1].send(output);
+				}
+				
+				if(Result.equals("UserIN not BUSY"))
+				{
+				String decision = "IN";
+				Packet output = create(decision);
+				outport[1].send(output);
+				}
 				
 			}
 			drop(p);
