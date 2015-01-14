@@ -8,5 +8,11 @@
 	<classpathentry kind="lib" path="D:/Chen/lab/ical4j-1.0.6/lib/commons-logging-1.1.3.jar"/>
 	<classpathentry kind="lib" path="D:/Chen/lab/ical4j-1.0.6/lib/groovy-all-2.1.7.jar"/>
 	<classpathentry kind="lib" path="D:/Chen/lab/ical4j-1.0.6/lib/ical4j-1.0.6.jar"/>
+	<classpathentry kind="lib" path="D:/LAB/group2/CALENDAR SENSOR/ical4j-1.0.6/lib/backport-util-concurrent-3.1.jar"/>
+	<classpathentry kind="lib" path="D:/LAB/group2/CALENDAR SENSOR/ical4j-1.0.6/lib/commons-codec-1.8.jar"/>
+	<classpathentry kind="lib" path="D:/LAB/group2/CALENDAR SENSOR/ical4j-1.0.6/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/LAB/group2/CALENDAR SENSOR/ical4j-1.0.6/lib/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/LAB/group2/CALENDAR SENSOR/ical4j-1.0.6/lib/groovy-all-2.1.7.jar"/>
+	<classpathentry kind="lib" path="D:/LAB/group2/CALENDAR SENSOR/ical4j-1.0.6/lib/ical4j-1.0.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
