@@ -52,7 +52,7 @@ public class Network_IN_OUT extends Network {
 			
 		component(Calendar_check, Component_Main_Calendar_Check.class);
 		component(Office_time_check,Component_Check_Office_Hours.class);	
-		component(Meeting_check,Component_Check_Meeting_Calendar.class);
+		component(Meeting_check,Component_Check_Meeting_Calendar_test.class);
 		
 		component(Calendar_decider,Component_Decider.class);
 		component(Office_time_decider,Component_Decider.class);
@@ -97,7 +97,8 @@ public class Network_IN_OUT extends Network {
 		initialize("Calendar.db:Year_2015", component(Calendar_check), port("SOURCE"));		
 		/* Specify time in 24 hours format */ 
 		initialize("0:00-23:59", component(Office_time_check), port("TIME[1]"));
-		initialize("NOMEETING", component(Meeting_check), port("MEETING[1]"));
+		String number=String.valueOf(i);
+		initialize(number, component(Meeting_check), port("MEETING[1]"));
 		
 		
 		connect(component(Calendar_check), port("OUT"), component(Calendar_decider), port("IN"));

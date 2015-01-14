@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+PRODID:-//Ben Fortuna//iCal4j 1.0//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTART:20150114T020000Z
+DTEND:20150114T030000Z
+SUMMARY:Meeting Subject
+LOCATION:Location - Mumbai
+DESCRIPTION:This goes in decription section of the metting like agenda etc.
+ORGANIZER:MAILTO:admin@javaxp.com
+END:VEVENT
+END:VCALENDAR

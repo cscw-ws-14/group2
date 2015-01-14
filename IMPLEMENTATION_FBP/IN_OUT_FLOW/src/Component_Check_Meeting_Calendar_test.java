@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -45,12 +46,15 @@ public class Component_Check_Meeting_Calendar_test extends Component {
 			 
 			 /* Get Meeting Calendar FileName */
 			 u_meet = user_meeting[1].receive();
-			 String Meeting_Calendar = (String) u_meet.getContent();
+			 String Meeting_Calendar = (String) u_meet.getContent()+".ics";
 			 
 			 /* Parsing the ics file according to the fiilname */
+			 File ICS=new File(Meeting_Calendar);
+			 if (ICS.exists()){
+		     System.out.println("The related ics file is existed");
 			 FileInputStream fin = null;
 			 try {
-			 	   fin = new FileInputStream(Meeting_Calendar);
+			 	   fin = new FileInputStream(ICS);
 			 } 
 			 catch (FileNotFoundException e) {
 			 	e.printStackTrace();
@@ -103,7 +107,7 @@ public class Component_Check_Meeting_Calendar_test extends Component {
 							} catch (ParseException e) {
 						     	e.printStackTrace();
 							}
-				        	System.out.println(dstart); 
+				        	System.out.println("Start: "+dstart); 
 				        }
 				        else  if (name.equals("DTEND")) {
 				        	sEnd=property.getValue();
@@ -113,7 +117,7 @@ public class Component_Check_Meeting_Calendar_test extends Component {
 							} catch (ParseException e) {
 								e.printStackTrace();
 							}
-				        	System.out.println(dend); 
+				        	System.out.println("End: "+dend); 
 				    }
 				    if((!(dstart==null))&&(!(dend==null)))
 				    {
@@ -134,6 +138,12 @@ public class Component_Check_Meeting_Calendar_test extends Component {
 		     outport[0].send(p1);
 			 }
 			 else {
+				 Packet p1 = create("NOMEETING");
+			     outport[0].send(p1);
+			 }
+			}
+			 else{
+				 System.out.println("The related ics file is not existed");
 				 Packet p1 = create("NOMEETING");
 			     outport[0].send(p1);
 			 }
