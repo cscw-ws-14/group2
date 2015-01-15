@@ -9,15 +9,15 @@
 Hardware Requirements : 
 
       1. Motion Sensor
-      2. Pressure Sensor
-      3. Raspberry Pi
-      4. Public Display Screen
+      2. Raspberry Pi
+      3. Public Display Screen
       
 Software Requirements :
 
       1. Office Meeting Schedule database
       2. Keyboard and Mouse events (Virtual Sensor)
       3. Node Red
-      4. Flow Based Programming
-
+      4. Java Flow Based Programming
+      5. HTML, Javascript - User Interface
+      6. KeyStroke Dynamics - User Identification
 
