@@ -51,7 +51,7 @@ public class Component_Check_Meeting_Calendar_test extends Component {
 			 /* Parsing the ics file according to the fiilname */
 			 File ICS=new File(Meeting_Calendar);
 			 if (ICS.exists()){
-		     System.out.println("The related ics file is existed");
+		     System.out.println("The related ics file is existed"+" "+Meeting_Calendar);
 			 FileInputStream fin = null;
 			 try {
 			 	   fin = new FileInputStream(ICS);
@@ -143,7 +143,7 @@ public class Component_Check_Meeting_Calendar_test extends Component {
 			 }
 			}
 			 else{
-				 System.out.println("The related ics file is not existed");
+				 System.out.println("The related ics file is not existed"+" "+Meeting_Calendar);
 				 Packet p1 = create("NOMEETING");
 			     outport[0].send(p1);
 			 }
